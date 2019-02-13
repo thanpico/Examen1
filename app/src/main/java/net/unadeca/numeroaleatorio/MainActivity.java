@@ -36,8 +36,9 @@ public class MainActivity extends AppCompatActivity {
         final Button informacion = findViewById(R.id.info);
         final Button jugar = findViewById(R.id.jugar);
         final Button resert = findViewById(R.id.resert);
+        final TextView Intentos = findViewById(R.id.Intentos);
         resert.setEnabled(false);
-
+        Intentos.setText(String.valueOf(intentos));
         //Toast de bienvenida
         Toast.makeText(getApplicationContext(),getResources().getString(R.string.bienvenida), Toast.LENGTH_LONG).show();
 
@@ -76,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), getResources().getString(R.string.numeromayor), Toast.LENGTH_LONG).show();
                         numero.setText(null);
                         intentos--;
+                        Intentos.setText(String.valueOf(intentos));
+
                     }
                     //volvemos a utilizar un if pero es esta ocasion para ver si es menor
                     if (aleatorio < numeroUsuario){
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), getResources().getString(R.string.numeromenor), Toast.LENGTH_LONG).show();
                         numero.setText(null);
                         intentos--;
+                        Intentos.setText(String.valueOf(intentos));
 
                     }
                     //de no adivinar el numero, los intentos se irán disminuyendo hasta llegar a creo, acá es cuando el usuario pierde
@@ -92,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                         pantalla.setText(R.string.perdedor);
                         resert.setEnabled(true);
                         numero.setEnabled(false);
+                        Intentos.setText(String.valueOf(intentos));
                     }
 
                     //a la hora que el numero aleatorio sea igual al numero ingresado se termina el juego, mostrando un mensaje en pantalla
@@ -102,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
                         jugar.setEnabled(false);
                         resert.setEnabled(true);
                         numero.setEnabled(false);
+                        Intentos.setText(String.valueOf(intentos));
                     }
 
 
