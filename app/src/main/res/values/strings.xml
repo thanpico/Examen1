@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NumeroAleatorio</string>
+    <string name="numero">Generando numero.</string>
+    <string name="hint">Escribe un numero entre 0 - 10</string>
+    <string name="game">JUGAR</string>
+    <string name="intrucciones">Bienvenido a Numero Aleatorio, digite un numero entre el 0 - 10 para así adivinar el numero,
+        tienes solamente 3 intentos, suerte!</string>
+    <string name="intentos">Intentos</string>
+    <string name="info">Informacion</string>
+    <string name="errornumero">Usted no ingresó un numero.</string>
+    <string name="numeromayor">Digite un numero Mayor.</string>
+    <string name="numeromenor">Digite un numero Menor</string>
+    <string name="gamerfinaly">Genial adivinaste el numero.</string>
+    <string name="bienvenida">Hello Friend</string>
+    <string name="ganador">HAZ GANADO!</string>
+    <string name="resert">Volver a Jugar</string>
+    <string name="perdedor">HAZ PERDIDO!</string>
+
+
+</resources>
